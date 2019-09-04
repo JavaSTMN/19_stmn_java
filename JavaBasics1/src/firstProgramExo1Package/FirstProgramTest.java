@@ -1,4 +1,4 @@
-package FirstProgramPackage;
+package firstProgramExo1Package;
 
 import static org.junit.jupiter.api.Assertions.*;
 

@@ -1,4 +1,4 @@
-package FirstProgramPackage;
+package firstProgramExo1Package;
 
 public class FirstProgram {
 	
