@@ -13,7 +13,7 @@ class FirstProgramTest {
 	
 	@Test
 	void moyTestThrow() throws Exception {
-		assertEquals(1.5f, FirstProgram.moy(new double[] { 1, 2 }));
+		assertThrows(Exception.class, () -> { FirstProgram.moy(new double[] {});});
 	}
 
 }
