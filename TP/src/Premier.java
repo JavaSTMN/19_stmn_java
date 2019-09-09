@@ -1,4 +1,5 @@
-package toto;
+
+
 
 public class Premier { 
     public static void main (String[] argv) {
