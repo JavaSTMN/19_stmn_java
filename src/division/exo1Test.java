@@ -8,10 +8,12 @@ import org.junit.jupiter.api.Test;
 
 class exo1Test {
 	float[] numbers;
+	float[] emptyArray;
 	
 	@BeforeEach
 	void setUp() throws Exception {
 		numbers = new float[] {5,5,5};
+		emptyArray = new float[] {};
 	}
 	
 	@AfterEach
@@ -20,11 +22,18 @@ class exo1Test {
 	}
 	
 	@Test
-	void test() throws Exception {
-		
-		assertEquals(5, exo1.moy(numbers));
+	void testDivException() throws Exception {		
+		assertThrows(Exception.class, () ->{exo1.moy(emptyArray);});
+	}
+	
+	@Test
+	void testNotEqual() throws Exception {
 		assertNotEquals(10, exo1.moy(numbers));
-		assertThrows(Exception.class, )->{test.moy(new double[] {});});
+	}
+	
+	@Test
+	void testNominal() throws Exception {
+		assertEquals(5, exo1.moy(numbers));
 	}
 	
 }
