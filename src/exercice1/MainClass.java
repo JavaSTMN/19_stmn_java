@@ -1,8 +1,6 @@
-public class MainClass {
-	
-	public static void main(String[] args) {
+package exercice1;
 
-	}
+public class MainClass {
 
 	public static double moy(double[] values) throws Exception {
 		if(values.length == 0) {
@@ -16,29 +14,28 @@ public class MainClass {
 		return sum/values.length;
 	}
 	
-	public static int[][] multiply(int[][] A, int[][] B) throws Exception{
+	public static int[][] multiply(int[][] A, int[][] B) throws Exception {
 
-		if(A == null){
+		if (A == null) {
 			throw new Exception("Matrix A is null.");
 		}
 
-		if(B == null){
+		if (B == null) {
 			throw new Exception("Matrix B is null.");
 		}
 
-		if(A[0].length != B.length){
+		if (A[0].length != B.length) {
 			throw new Exception("Matrix's dimensions mismatch.");
 		}
 
 		int[][] C = new int[A.length][B[0].length];
-		for(int i = 0; i < A.length; i++) {
-			for(int j = 0; j < B[0].length; j++) {
-				for (int k = 0; k < B.length; k++){
+		for (int i = 0; i < A.length; i++) {
+			for (int j = 0; j < B[0].length; j++) {
+				for (int k = 0; k < B.length; k++) {
 					C[i][j] += A[i][k] * B[k][j];
 				}
 			}
 		}
 		return C;
 	}
-	
 }

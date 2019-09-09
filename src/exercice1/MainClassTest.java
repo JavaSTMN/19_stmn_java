@@ -1,4 +1,5 @@
-import org.junit.jupiter.api.BeforeEach;
+package exercice1;
+
 import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.*;
