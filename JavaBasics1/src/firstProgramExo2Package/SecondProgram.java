@@ -49,7 +49,7 @@ public class SecondProgram {
 				// Calcul du terme de la matrice produit à l'indice [i][j]
 				result[i][j] = a[i][0] * b[0][j];
 				for (int k = 1; k < a.length; k++) {
-					result[i][j] += a[i][k] * b[k][j];	
+					result[i][j] += a[i][k] * b[k][j];	 
 				}
 			}
 		}
