@@ -1,4 +1,3 @@
-
 public class Reminders {
 
 	public static void main(String[] args) {
@@ -33,6 +32,9 @@ public class Reminders {
 	}
 
 	public static int[][] matrixMultiplication(int[][] a, int[][] b) throws Exception {
+		if (a == null || b == null) {
+			throw new Exception("Au moins une des 2 matrices est vide");
+		}
 		if (a[0].length != b.length) {
 			throw new Exception("Multiplication impossible");
 		}
@@ -42,6 +44,7 @@ public class Reminders {
 				for (int m = 0; m < b.length; m++) {  /// colone de MA et ligne de MB
 					c[i][j] += a[i][m] * b[m][j];
 				}
+				System.out.println(c[i][j]);
 			}
 		}
 		return c;
