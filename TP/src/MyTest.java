@@ -5,8 +5,9 @@ import org.junit.jupiter.api.Test;
 class MyTest {
 
 	@Test
-	void test() {
-		fail("Not yet implemented");
+	void test1234() {
+		int[][] a = {{1,2},{3,4}};
+		int[][] b = a;
+		
 	}
-
 }
