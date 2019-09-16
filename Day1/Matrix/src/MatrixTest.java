@@ -38,7 +38,7 @@ class MatrixTest {
 
 		assertArrayEquals(expected, c);
 	}
-
+	
 	@Test
 	void testNominal() {
 		int[][] a = {
@@ -61,8 +61,6 @@ class MatrixTest {
 				{3,8},
 				{5,12}
 		};
-
 		assertArrayEquals(expected, c);
 	}
-
 }
