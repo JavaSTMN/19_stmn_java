@@ -8,13 +8,19 @@ import org.junit.jupiter.api.BeforeAll;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
+import matrices.matrice;
+
 class FirstInFirstOutTest {
 	static FirstInFirstOut fifo;
+	static FirstInFirstOut fifoMax;
 
 	@BeforeAll
 	static void setUpBeforeClass() throws Exception {
+		// Setup for the FIFO without using the untested functions
+		fifoMax = new FirstInFirstOut();
 		fifo = new FirstInFirstOut();
-
+		fifo.storage[0] = 34;
+		fifo.size++;	
 	}
 
 	@AfterAll
@@ -33,7 +39,7 @@ class FirstInFirstOutTest {
 	@Test
 	void testNominalPush() throws Exception {
 		
-		fifo.push(fifo, 24);
+		fifo.push(24);
 		
 		assertEquals( 24, fifo.storage[fifo.size - 1]);
 	}
@@ -41,7 +47,14 @@ class FirstInFirstOutTest {
 	@Test
 	void testNominalPop() throws Exception {
 		
-		assertEquals(34, fifo.pop(fifo));
+		assertEquals(34, fifo.pop());
+	}
+	
+	@Test
+	void testSizeMaxException() throws Exception {
+		fifoMax.size = fifoMax.storage.length;
+		
+		assertThrows(Exception.class, () -> {fifoMax.push(10);;});
 	}
 
 }
