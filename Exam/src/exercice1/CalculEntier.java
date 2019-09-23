@@ -41,6 +41,12 @@ public class CalculEntier {
 		return (int) Math.pow(sum, 2);
 	}
 	
+	public static int getDifference(int n) throws Exception {
+		int sommeCarres = CalculEntier.getSommeCarres(n);
+		int carreSomme = CalculEntier.getCarreSomme(n);
+		
+		return sommeCarres - carreSomme;
+	}
 	
 
 	public CalculEntier() {

@@ -8,10 +8,10 @@ class CalculEntierTest {
 
 	@Test
 	void testSommeCarresNormal() {
-		int expected1 = 0;		
+		int expected1 = 0;
 		int expected2 = 1;
 		int expected3 = 385;
-		
+
 		try {
 			assertEquals(expected1, CalculEntier.getSommeCarres(0));
 			assertEquals(expected2, CalculEntier.getSommeCarres(1));
@@ -20,23 +20,21 @@ class CalculEntierTest {
 			fail("Pas d'exception prevue");
 		}
 	}
-	
-	
+
 	@Test
-	void testSommeCarresNegatif() {		
+	void testSommeCarresNegatif() {
 		// La methode doit envoyer une exception si n est negatif
 		assertThrows(Exception.class, () -> {
 			CalculEntier.getSommeCarres(-20);
 		});
 	}
-	
-	
+
 	@Test
 	void testCarreSommeNormal() {
-		int expected1 = 0;		
+		int expected1 = 0;
 		int expected2 = 1;
 		int expected3 = 3025;
-		
+
 		try {
 			assertEquals(expected1, CalculEntier.getCarreSomme(0));
 			assertEquals(expected2, CalculEntier.getCarreSomme(1));
@@ -45,14 +43,30 @@ class CalculEntierTest {
 			fail("Pas d'exception prevue");
 		}
 	}
-	
-	
+
 	@Test
-	void testCarreSommeNegatif() {		
+	void testCarreSommeNegatif() {
 		// La methode doit envoyer une exception si n est negatif
 		assertThrows(Exception.class, () -> {
 			CalculEntier.getCarreSomme(-20);
 		});
 	}
-	
+
+	@Test
+	void testGetDifference() {
+		int diff;
+		try {
+			diff = CalculEntier.getDifference(100);
+			System.out.println(
+					"La difference entre la somme des 100 premiers entiers naturels et le carre de la somme est :"
+							+ diff);
+
+		} catch (Exception e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+
+		assertTrue(true);
+	}
+
 }
