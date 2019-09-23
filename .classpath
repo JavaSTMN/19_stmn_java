@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
+	<classpathentry kind="src" path="Day1/Debug/src"/>
+	<classpathentry kind="src" path="Day1/Hello/src"/>
+	<classpathentry kind="src" path="Day1/Matrix/src"/>
+	<classpathentry kind="src" path="Day1/Mean/src"/>
+	<classpathentry kind="src" path="Day1/RawJava"/>
+	<classpathentry kind="src" path="Day2/Collections/src"/>
+	<classpathentry kind="src" path="Day2/FIFO_wo_object/src"/>
+	<classpathentry kind="src" path="Day2/FIFO/src"/>
+	<classpathentry kind="output" path="bin"/>
+</classpath>
