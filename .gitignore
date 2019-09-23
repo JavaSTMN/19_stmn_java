@@ -1,2 +1,8 @@
+<<<<<<< HEAD
 bin
 *.class
+=======
+/out/
+/.idea/
+/CC1.iml/
+>>>>>>> 0edce80... Last commit
