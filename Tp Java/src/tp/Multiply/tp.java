@@ -1,4 +1,4 @@
-package tp;
+package tp.Multiply;
 public class tp {
 	
 	public static float mean(int[] tab) throws Exception {

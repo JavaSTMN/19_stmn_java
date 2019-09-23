@@ -1,4 +1,4 @@
-package tp;
+package tp.Multiply;
 
 import static org.junit.jupiter.api.Assertions.*;
 
