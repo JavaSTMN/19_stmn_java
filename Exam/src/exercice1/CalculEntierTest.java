@@ -10,12 +10,12 @@ class CalculEntierTest {
 	void testSommeCarresNormal() {
 		int expected1 = 0;		
 		int expected2 = 1;
-		int expected3 = 14;
+		int expected3 = 385;
 		
 		try {
 			assertEquals(expected1, CalculEntier.getSommeCarres(0));
 			assertEquals(expected2, CalculEntier.getSommeCarres(1));
-			assertEquals(expected3, CalculEntier.getSommeCarres(3));
+			assertEquals(expected3, CalculEntier.getSommeCarres(10));
 		} catch (Exception e) {
 			fail("Pas d'exception prevue");
 		}
@@ -30,5 +30,29 @@ class CalculEntierTest {
 		});
 	}
 	
+	
+	@Test
+	void testCarreSommeNormal() {
+		int expected1 = 0;		
+		int expected2 = 1;
+		int expected3 = 3025;
+		
+		try {
+			assertEquals(expected1, CalculEntier.getCarreSomme(0));
+			assertEquals(expected2, CalculEntier.getCarreSomme(1));
+			assertEquals(expected3, CalculEntier.getCarreSomme(10));
+		} catch (Exception e) {
+			fail("Pas d'exception prevue");
+		}
+	}
+	
+	
+	@Test
+	void testCarreSommeNegatif() {		
+		// La methode doit envoyer une exception si n est negatif
+		assertThrows(Exception.class, () -> {
+			CalculEntier.getCarreSomme(-20);
+		});
+	}
 	
 }
