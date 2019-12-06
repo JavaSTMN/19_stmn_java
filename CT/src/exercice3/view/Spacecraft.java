@@ -7,6 +7,7 @@ import java.awt.Graphics;
 import java.awt.Graphics2D;
 import java.awt.Polygon;
 import java.awt.RenderingHints;
+import java.awt.print.Printable;
 
 public class Spacecraft {
 	public static final Polygon shape = new Polygon(new int[] { 0, 10, 0, -10 }, new int[] { -5, 13, 5, 13 }, 4);

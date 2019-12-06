@@ -11,6 +11,7 @@ import java.util.Observer;
 import javax.swing.BorderFactory;
 import javax.swing.JPanel;
 
+import exercice1.Vector;
 import exercice3.model.Scene;
 import exercice3.model.Spacecraft;
 
@@ -43,10 +44,15 @@ public class SceneView extends JPanel implements Observer {
 			public void keyPressed(KeyEvent e) {
 				switch (e.getKeyChar()) {
 				case 'q':
-					// TODO Fill me
-					System.out.println("q pressed");
+					spacecraft.setBearing(spacecraft.getBearing() - Math.toRadians(8f));
 					break;
-				// TODO Fill me
+				case 's':
+					spacecraft.setBearing(spacecraft.getBearing() + Math.toRadians(8f));
+					break;
+				case 'z':
+					spacecraft.move(1f); // TODO: replace with real time
+					break;
+
 				}				
 			}
 		});
@@ -60,7 +66,7 @@ public class SceneView extends JPanel implements Observer {
         super.paintComponent(g);
         
         Spacecraft spacecraft = model.getSpacecraft();
-        exercice3.view.Spacecraft.draw(g, spacecraft.getX(), spacecraft.getY(), 0);  
+        exercice3.view.Spacecraft.draw(g, spacecraft.getX(), spacecraft.getY(), spacecraft.getBearing());  
     }
 
 	@Override

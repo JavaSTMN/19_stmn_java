@@ -1,8 +1,11 @@
 package exercice3.model;
 
+import exercice1.Vector;
+
 public class Spacecraft {
 	private double x;
     private double y;
+    private double bearing;
 
     public Spacecraft() {
      }
@@ -23,8 +26,18 @@ public class Spacecraft {
     	this.y = y;
     }
     
+    public double getBearing() {
+    	return this.bearing;
+    }
+    
+    public void setBearing(double bearing) {
+    	this.bearing = bearing;
+    }
+    
     public void move(double time) {
-    	// TODO Fill me
-    	
+    	double[] v = new double[] { Math.cos(getBearing()), Math.sin(getBearing()) };   
+    	double[] speed = Vector.scale(v, time);
+    	this.x += speed[0];
+    	this.y += speed[1];
     }
 }
