@@ -1,0 +1,8 @@
+POUR LE DRIAGRAMME DE CLASSE
+C'est gràce à JFrame qu'on peut add et visualiser notre fenetre, cette fenetre
+est bien sur définie dans SceneView
+
+
+POUR LE DIAGRAMME DE SEQUENCE
+Dans la classe Launcher, on update selon une période la fenetre pour pouvoir
+jouer et que les actions se mettent à jour

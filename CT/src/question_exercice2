@@ -1,0 +1,4 @@
+3) en l'état, ça ne peut pas fonctionner car nous avons des différences au niveau du type. 
+Nos méthodes attendent un type Node, il faudra définir aussi la racine.
+4)J'utilise un array list, peut être modifier cela pour avoir un hashMap avec "clef", "valeur"
+Changement de mes méthodes pour implémenter ITree
