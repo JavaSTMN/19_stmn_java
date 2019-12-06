@@ -1,0 +1,3 @@
+On obtient une mise à jour grace à la classe observable et l'interface observer.
+En effet, la classe observable à une fonction notify qui va faire utiliser la fonction update d'observer celle-ci étant overwrite dans GameView.
+Grâce à ce mechanisme le model et la view sont mis à jours.
