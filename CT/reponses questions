@@ -1,0 +1,5 @@
+Question 2.3 : TreeViewer se construit à l'aide d'une classe qui implémente l'interface Itree, ce qui n'est pas notre cas
+Question 2.4 : IL faut donc que Seed implémente cette dernière pour répondre aux besoins de TreeViewer
+Question 3.2 : La zone de jeu est mise à jour grâce au pattern observer.
+    On utilise les fonctions setChanged() et notifyObservers() de la classe Observable pour notifier tous les abonnés de l'objet.
+    L'abonné, ici GameArea, reçoit la notification avec l'objet modifié, et on met à jour son contenu.
