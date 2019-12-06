@@ -1,0 +1,7 @@
+Exercice 3:
+
+2./
+	La zone de jeu est mise a jour grace au mécanismes des Observer/Observables. La vue qui necessite de voir si le model a changé
+implemente l'interface Observer et s'abone a un model qui lui herite de Observable. Lorsque le model change, on appèle une methode notify
+de Observable qui va parcourir tous les observer abonnées et qui va appeler leurs methode update(). Dans cette methode, nous metons a jour
+tous les valeurs necessaires.
