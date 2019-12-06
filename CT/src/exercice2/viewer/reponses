@@ -1,0 +1,11 @@
+Question 3:
+
+La class Seed n'implémente pas l'interface ITree et ne peut donc pas être utilisée dans la class TreeView.
+
+Question 4 :
+
+Il faudrait que la class Seed implémente l'interface ITree et donc toutes les méthodes déclarées dans ITree.
+
+Question 5 :
+
+Pour ne pas modifier la classe seed, nous allons créer une class SeedAdapter qui utilise le adapter design pattern.
