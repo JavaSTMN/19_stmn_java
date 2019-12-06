@@ -9,7 +9,7 @@ class TestFunction {
 		Throwable exception = assertThrows(Exception.class, () -> {Function.mean(new double[] {});});
 		assertEquals("Cannot compute mean of empty list", exception.getMessage());
 	}
-	
+
 	@Test
 	void test1Element() {
 		double[] items = new double[] {1.5};
@@ -20,7 +20,7 @@ class TestFunction {
 			fail("Test should not throw");
 		}
 	}
-	
+
 	@Test
 	void testNominal() {
 		double[] items = new double[] {1.5, 3.2, 7.8};
@@ -31,12 +31,12 @@ class TestFunction {
 			fail("Test should not throw");
 		}
 	}
-	
+
 	@Test
 	void testBigList() {
 		double[] items = new double[100000];
 		for (int i=0; i< items.length; ++i) {
-			items[i] = i+1; 
+			items[i] = i+1;
 		}
 		double expected = items.length*(items.length+1.)/(2*items.length);
 		try {

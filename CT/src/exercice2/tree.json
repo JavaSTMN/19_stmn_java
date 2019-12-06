@@ -1,0 +1,34 @@
+{
+    "root": {
+        "name": "Beastiary",
+        "children": [
+            {
+                "name": "Uncommon",
+                "children": [
+                    {
+                        "name": "Brazen zealot"
+                    },
+                    {
+                        "name": "Murloc Tidecaller"
+                    }
+                ]
+            },
+            {
+                "name": "Rare",
+                "children": [
+                    {
+                        "name": "Toxmonger"
+                    }
+                ]
+            },
+            {
+                "name": "Legendary",
+                "children": [
+                    {
+                        "name": "Deathwing"
+                    }
+                ]
+            }
+        ]
+    }
+}
