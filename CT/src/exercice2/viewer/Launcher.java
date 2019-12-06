@@ -1,5 +1,7 @@
 package exercice2.viewer;
 
+import javax.swing.JFrame;
+
 import exercice2.back.Node;
 import exercice2.back.Tree;
 
@@ -25,7 +27,13 @@ public class Launcher {
 		// create tree
 		Tree tree = new Tree(root);
 		
+		// render tree
+		JFrame f = new JFrame();
 		TreeViewer tw = new TreeViewer(tree);
+		f.add(tw);
+		f.setSize(200,200);
+		f.setVisible(true);
+		
 	}
 	
 }
