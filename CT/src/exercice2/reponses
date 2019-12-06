@@ -1,0 +1,21 @@
+3. La classe Seed n'implemente pas l'interface ITree, or, le contructeur de TreeViewer utilise un objet implementant l'interface ITree
+4. Implementer l'interface ITree dans Seed, puis implementer les methodes manquantes.
+
+5. > voir SeedITree
+
+8.
+
+{
+	"label" : "label",
+	"childrenNumber" : (int),
+	"children": [
+		{
+			"label",
+			...
+		},
+		{
+			"label",
+			...
+		}
+	]
+}
