@@ -5,3 +5,12 @@ Exercice 3:
 implemente l'interface Observer et s'abone a un model qui lui herite de Observable. Lorsque le model change, on appèle une methode notify
 de Observable qui va parcourir tous les observer abonnées et qui va appeler leurs methode update(). Dans cette methode, nous metons a jour
 tous les valeurs necessaires.
+
+
+FICHE TEST:
+
+evolution (a): 
+Apres avoir implementer les fonctionalités, j'ai testé directement en jeu en maintenant la touche q appuyé puis en maintenant la touche d
+appuyé et j'ai verifié que le sprite bougait bien dans le bon sens et qu'aucune erreur n'etait envoyé dans la console.
+
+evolution(b):

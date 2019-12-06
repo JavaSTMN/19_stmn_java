@@ -1,0 +1,10 @@
+Exercice 2:
+
+3./
+	On ne peut pas utiliser le code fournis en l'etat avec notre classe Seed, car celle ci n'as pas de notion de parent.
+Il n'y a aucun moyen a partir d'un element enfant de retrouver son noeud parent. De ce fait nous ne somme pas non plus en mesure
+de retrouver le root, qui est le noeud dont le parent vaut null.
+
+4./
+	Pour pouvoir utiliser le code fournis avec Seed il faudrait qu'un noeud enfant soit capable de retrouver son parent.
+Il faut aussi que Seed implémente l'interface ITree
