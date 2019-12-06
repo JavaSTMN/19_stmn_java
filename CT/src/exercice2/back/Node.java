@@ -1,6 +1,8 @@
-package exercice2.model;
+package exercice2.back;
 
 import java.util.ArrayList;
+
+import exercice2.viewer.ITree;
 
 public class Node {
 	private String name;
@@ -8,6 +10,11 @@ public class Node {
 	
 	public Node() {
 		this.children = new ArrayList<Node>();
+	}
+	
+	public Node(String name) {
+		this.children = new ArrayList<Node>();
+		this.name = name;
 	}
 	
 	public void addChild(Node child) {

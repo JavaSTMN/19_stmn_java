@@ -1,4 +1,4 @@
-package exercice2.model;
+package exercice2.back;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
