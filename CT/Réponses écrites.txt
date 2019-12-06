@@ -1,0 +1,9 @@
+EX 2 - 3
+TreeViewer est fait pour fonctionner avec l'interface ITree, mais pas Node.
+
+
+EX 3 - 2
+Le timer qui régis l'écoulement du temps a une task qu'il va donc lancer automatiquement.
+Elle fait appel à update de l'instance de la classe scène en passant par le launcher.
+Scène est un Observables et va donc notifier les classes qui l'observe.
+Ces dernières vont finalement réaliser les actions prévues.
