@@ -1,0 +1,14 @@
+package exercice3;
+
+public class Triangle extends Form{
+	
+	private double base;
+	private double hauteur;
+
+	@Override
+	public double calcArea() {
+		// TODO Auto-generated method stub
+		return 0;
+	}
+
+}

@@ -1,0 +1,16 @@
+package exercice3;
+
+import static org.junit.jupiter.api.Assertions.*;
+
+import org.junit.jupiter.api.Test;
+
+class ToyTest {
+
+	@Test
+	void test() {
+		
+		Circle c = new Circle(2);
+		fail("Not yet implemented");
+	}
+
+}

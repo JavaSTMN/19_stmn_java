@@ -1,0 +1,16 @@
+package exercice1;
+
+public class Operations {
+	
+	public static int sumOfCube(int n) throws Exception{
+		if(n == 0 || n < 0) {
+			throw new Exception("")
+		}
+		int sum = 0;
+		for(int i = 1; i <= n; i++) {
+			sum += Math.pow(i, 3);
+		}
+		return sum;
+	}
+
+}
