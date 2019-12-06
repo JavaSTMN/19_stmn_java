@@ -16,7 +16,7 @@ class VectorTest {
 		double result = Vector.norm(v);
 		
 		// test
-		assertEquals(expected, result);		//assertArrayEquals(expected, result);
+		assertEquals(expected, result);
 	}
 	
 	@Test
