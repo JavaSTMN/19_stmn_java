@@ -1,0 +1,8 @@
+Question 3 :
+Parce qu'on ne peut pas implémenter les méthodes
+
+Question 4 :
+Il faut implémenter l'interface ITree pour pouvoir utiliser le code fourni avec Node
+
+Question 5:
+Il faut utiliser un design patter adapter
