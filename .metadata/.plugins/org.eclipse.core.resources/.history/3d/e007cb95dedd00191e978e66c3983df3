@@ -1,6 +1,0 @@
-package exercice3;
-
-public abstract class Form {
-
-	public abstract double calcArea();
-}
