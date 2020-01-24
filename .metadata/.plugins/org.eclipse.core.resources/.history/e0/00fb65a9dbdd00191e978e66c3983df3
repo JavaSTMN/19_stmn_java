@@ -1,0 +1,9 @@
+package exercice3;
+
+public class Circle extends Form{
+	
+	private double rayon;
+	
+	
+
+}

@@ -1,0 +1,22 @@
+package exercice2;
+
+import static org.junit.jupiter.api.Assertions.*;
+
+import java.util.Calendar;
+
+import org.junit.jupiter.api.Test;
+
+class EventItemTest {
+
+	@Test
+	void test() {
+		EventItem item = new EventItem();
+		
+		String hour = Calendar.HOUR + ":" + Calendar.MINUTE;
+		System.out.println(hour);
+		
+		String test = item.toString();
+		
+	}
+
+}

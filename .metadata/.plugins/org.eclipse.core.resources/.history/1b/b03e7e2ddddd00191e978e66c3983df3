@@ -1,0 +1,15 @@
+package exercice3;
+
+public class Rectangle extends Form{
+
+	private double longueur;
+	private double largeur;
+	
+	
+	@Override
+	public double calcArea() {
+		return longueur * largeur;
+	}
+	
+	
+}

@@ -1,0 +1,14 @@
+package exercice3;
+
+public class Circle extends Form{
+	
+	private double rayon;
+
+	@Override
+	public double calcArea() {
+		return 2 * Math.PI * rayon;
+	}
+	
+	
+
+}

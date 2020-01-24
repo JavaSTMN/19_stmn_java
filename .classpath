@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER">
+		<attributes>
+			<attribute name="module" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="src" path="CT/src"/>
+	<classpathentry kind="src" path="Day1/Debug/src"/>
+	<classpathentry kind="src" path="Day1/Hello/src"/>
+	<classpathentry kind="src" path="Day1/Matrix/src"/>
+	<classpathentry kind="src" path="Day1/Mean/src"/>
+	<classpathentry kind="src" path="Day1/RawJava"/>
+	<classpathentry kind="src" path="Day2/Collections/src"/>
+	<classpathentry kind="src" path="Day2/FIFO_wo_object/src"/>
+	<classpathentry kind="src" path="Day2/FIFO/src"/>
+	<classpathentry kind="src" path="Day3/Form/src"/>
+	<classpathentry kind="src" path="Day3/SynchronizedFifo/src"/>
+	<classpathentry kind="src" path="Day3/UpdatableContainer/src"/>
+	<classpathentry kind="src" path="setup (1)/src"/>
+	<classpathentry kind="output" path="bin"/>
+</classpath>

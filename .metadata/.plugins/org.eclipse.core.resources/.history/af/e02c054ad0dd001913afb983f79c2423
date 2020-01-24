@@ -1,0 +1,12 @@
+package exercice1;
+
+public class Operations {
+	
+	public int sumOfCube(int n) {
+		for(int i = 0; i < n; i++) {
+			
+		}
+		return 0;
+	}
+
+}

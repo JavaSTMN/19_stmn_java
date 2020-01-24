@@ -1,0 +1,29 @@
+package exercice2;
+
+import static org.junit.jupiter.api.Assertions.*;
+
+import java.util.Calendar;
+import java.util.Date;
+import java.util.GregorianCalendar;
+
+import org.junit.jupiter.api.Test;
+
+class EventItemTest {
+
+	@Test
+	void test() {
+		
+		Date date = new Date();
+		Calendar time = new GregorianCalendar();
+		time.setTime(date);
+		String hour = time.get(Calendar.HOUR) + ":" + time.get(Calendar.MINUTE);
+		
+		String date = "2019/09/23";
+		
+		EventItem item = new EventItem();
+		
+		String test = item.toString();
+		
+	}
+
+}

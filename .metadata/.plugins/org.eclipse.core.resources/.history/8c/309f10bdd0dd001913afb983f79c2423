@@ -1,0 +1,17 @@
+package exercice1;
+
+import static org.junit.jupiter.api.Assertions.*;
+
+import org.junit.jupiter.api.Test;
+
+class OperationsTest {
+
+	@Test
+	void testSumOfCube() {
+		int n = 10;
+		int sum = Operations.sumOfCube(n);
+		assertEquals(sum, 3025);
+		fail("Not yet implemented");
+	}
+
+}

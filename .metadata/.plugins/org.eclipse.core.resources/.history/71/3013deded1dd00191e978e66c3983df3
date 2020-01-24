@@ -1,0 +1,14 @@
+package exercice1;
+
+public class Operations {
+	
+	public static int sumOfCube(int n) {
+		int sum = 0;
+		for(int i = 0; i < n; i++) {
+			sum += (n*n*n);
+			System.out.println(sum);
+		}
+		return sum;
+	}
+
+}

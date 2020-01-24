@@ -1,0 +1,9 @@
+package exercice3;
+
+public class Toy {
+	
+	ArrayList<T> forms;
+	//a une liste de forme élémentaires
+	//calculer l'aire totale des formes
+
+}

@@ -1,0 +1,24 @@
+package exercice3;
+
+import java.util.ArrayList;
+
+public class Toy<? extends Form>{
+	
+	ArrayList<?> forms;
+	//a une liste de forme élémentaires
+	//calculer l'aire totale des formes
+	
+	public double calcTotalAreas() throws Exception {
+		if(forms.size() == 0) {
+			throw new Exception("There is no form");
+		}
+		double sum = 0;
+		
+		for(T form: forms) {
+			sum += form.calcArea();
+		}
+		
+		return sum;
+	}
+
+}

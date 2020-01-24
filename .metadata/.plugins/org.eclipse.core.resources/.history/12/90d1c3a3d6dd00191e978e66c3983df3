@@ -1,0 +1,25 @@
+package exercice2;
+
+import java.util.Calendar;
+import java.util.Date;
+
+public class EventItem {
+	
+	Date time;
+	Object source;
+	String type;
+	
+/*	public EventItem(String type, Object src) {
+		this.source = src;
+		this.type = type;
+	}*/
+	
+	public String toString() {
+		//time = new Calendar()
+		int test = time.getYear() + "/" + time.getMonth();
+		System.out.println(test);
+		return type;
+		
+	}
+
+}
